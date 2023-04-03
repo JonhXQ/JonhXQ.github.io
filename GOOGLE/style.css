@@ -1,0 +1,151 @@
+html{
+    min-width: 400px;
+}
+body{
+    background-color: #202124;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    height: 60px;
+}
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-derecha{
+    width: 250px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+.nav-derecha a{
+    margin-right: 10px;
+    color: white;
+}
+.apps{
+    width: 24px;
+    height: 24px;   
+    filter: invert(1);
+}
+.perfil{    
+    width: 32px;
+    height: 32px; 
+    border-radius: 50%;
+}
+
+/* MAIN */
+
+main{
+    margin-top: 106px;
+    text-align: center;
+}
+.logo{
+    margin: 0 auto;
+    margin-bottom: 30px ;
+}
+.logo img{
+    width: 272px;
+    height: 92px;
+}
+.search{
+    width: 584px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.input-search{
+    width: 582.4px;
+    border-radius: 100px;
+    border: 1px solid #5f6368;
+    caret-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-search:hover{
+    background-color: #303134;
+    border: none;
+}
+main .search input{
+    width: 443.4px;
+    height: 39px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.lupa-icono{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    padding-right: 13px;
+    width: 18px;
+    height: 18px;
+}
+.microfono-icono{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    padding: 0 8px 0 8px;
+    width: 20px;
+    height: 20px;
+}
+.camara-icono{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b6/Google_Lens_logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    padding: 0 8px 0 8px;
+    width: 20px;
+    height: 20px;
+}
+.botones{
+    width: 584;
+    margin: 0 auto;
+}
+.botones-div{
+    display: inline-block;
+}
+.search, .lucky{
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #171717;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+}
+footer li{
+    display: inline-block;
+    height: 30px;
+}
+footer li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(160,160,160);
+    margin-left: 30px;
+}
+.pais{
+    font-size: 14px;
+    color: #70757A;
+    margin-left: 30px;
+}
