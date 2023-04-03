@@ -51,7 +51,7 @@ main{
     margin-top: 106px;
     text-align: center;
 }
-.logo{
+#logo{
     margin: 0 auto;
     margin-bottom: 30px ;
 }
@@ -61,8 +61,7 @@ main{
 }
 .search{
     width: 584px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    margin: 0 auto 10px;
 }
 .input-search{
     width: 582.4px;
@@ -73,9 +72,10 @@ main{
     justify-content: center;
     align-items: center;
 }
-.input-search:hover{
+.input-search:hover,:focus{
     background-color: #303134;
     border: none;
+    color: white;
 }
 main .search input{
     width: 443.4px;
@@ -115,13 +115,28 @@ main .search input{
     height: 20px;
 }
 .botones{
-    width: 584;
+    width: 584px;
+    height: 58px;
     margin: 0 auto;
+    padding-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.botones-div{
-    display: inline-block;
+button{
+    width: 154px;
+    height: 34.4px;
+    padding: 0 16px;
+    margin: 11px 4px;
+    background-color: #303134;
+    border: none;
+    font-size: 14px;
+    color: white;
+    border-radius: 4px;
 }
-.search, .lucky{
+#search :hover,#lucky :hover{
+    cursor: pointer;
+    border: 1px solid #5f6368;
 }
 
 /* FOOTER */
