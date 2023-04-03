@@ -114,7 +114,7 @@ main .search input{
     width: 20px;
     height: 20px;
 }
-.botones{
+.btn-search{
     width: 584px;
     height: 58px;
     margin: 0 auto;
@@ -123,11 +123,7 @@ main .search input{
     align-items: center;
     justify-content: center;
 }
-#search :hover button,#lucky :hover button{
-    cursor: pointer;
-    border: 1px solid #5f6368;
-}
-button{
+#search, #lucky{
     width: 154px;
     height: 34.4px;
     padding: 0 16px;
@@ -137,6 +133,10 @@ button{
     font-size: 14px;
     color: white;
     border-radius: 4px;
+}
+#search:hover, #lucky:hover{
+    cursor: pointer;
+    border: 1px solid #5f6368;
 }
 
 /* FOOTER */
