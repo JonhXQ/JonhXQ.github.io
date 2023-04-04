@@ -2,15 +2,8 @@
     margin: 0px;
     padding: 0px;
 }
-.home-bg{
-    background-image: url("../imgs/home-background.jpg");
-    background-repeat: no-repeat;
-    background-position: center 0px;
-    box-sizing: border-box;  
-}
 
 nav.nav-pinterest {
-
     background-color:#fff;
     border-bottom: solid 1px rgba(197, 190, 190, 0.2);
     display: flex;
@@ -20,11 +13,10 @@ nav.nav-pinterest {
     
 }
 .search {
-   
     width: 70%;
 }
 .pint-search {
-    background-image: url("../imgs/icon-search.png");
+    background-image: url("../IMG/icon-search.png");
     background-repeat: no-repeat;
     background-position: 20px 15px; 
     background-color: #f0f0f0; 
@@ -74,7 +66,6 @@ button.pint-btn-logo {
 }
 button.pint-btn-logo:hover {
     background:#efefef;
-
 }
 
 button.pint-btn-logo:active {
@@ -105,9 +96,8 @@ button.pint-btn:active{
     padding:0;
     fill: #767676;
 }
- 
+
 .pint-link{
-     
     border-radius: 25px;
     font-weight: 700;
     height: 48px;
@@ -118,13 +108,11 @@ button.pint-btn:active{
 .pint-link:hover{
     background:#efefef;
     border-radius: 25px;
-   
 }
 
 .pint-link:active{
     background-color: #d2d2d2;
     border-radius: 25px;
-     
 }
 
 .pint-link.active{
@@ -264,7 +252,6 @@ button.pint-btn:active{
     padding-left: 6px;
 }
 
-/*-------------------------------------------------*/
 /*-------------------Botones Flotantes-------------*/
 .float-buttons-container{
     position: absolute;
@@ -281,7 +268,6 @@ button.pint-btn:active{
     height: 56px;
     border-radius: 50%;
     box-shadow       : 0 0 10px -1px rgba(0, 0, 0, .12);
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -299,49 +285,6 @@ button.pint-btn:active{
 
 }
 
-
-/*--------------------------------------------------*/
-/*--------------Botón Pin--------------------------*/
-.float-pin{
-    bottom: 76px;
-}
-
-.pin-container{
-    display: none;
-    position: absolute;
-    right: 65px;
-    top: -10px;
-    transform: translateY(-50%);
-    z-index: 15;
-}
-
-.pin-container.active{
-    display: block;
-}
-
-.pin {
-    border-radius  : 10px;
-    display        : flex;
-    flex-direction : row;
-    padding        : 8px;
-}
-
-.pin:hover {
-    background-color : #DDD;
-    color            : #111111;
-}
-
-.pin svg{
-    align-self: center;
-}
-
-.pin p{
-    font-size: 14px;
-    font-weight: 700;
-    padding: 8px;
-}
-
-/*--------------------------------------------------*/
 /*---------------Botón Help------------------------*/
 .float-help{
     bottom: 10px;
@@ -380,8 +323,8 @@ button.pint-btn:active{
     text-decoration: underline;
     color: #111111;
 }
-/*--------------------------------------------------*/
-/*----------------------------------------------- pintcard Hover State*/
+
+/*-pintcard Hover State*/
 .pint-card {
     
     width: 222px; 
@@ -436,25 +379,8 @@ img.pint-img {
     max-width: 235px;
 
 }
-/*.grid-item button{
-    position: absolute;
-    top: 10px;
-    opacity: 0;
-    margin-left: 60%;
-    visibility: visible;
-}
-*/
-
-/*.grid-item:hover>.temporal{
-    opacity: 1;
-    visibility: visible;
-    background-color:red ; 
-}*/
-
-
 
 .grid-item div.hovercard{ 
-     
     margin-left: 0;
     opacity: 0;
     position: absolute;
@@ -470,8 +396,6 @@ img.pint-img {
     opacity: 01;
     visibility: visible;
     width: 100%;
-     
-    
 }
 .group-top-btns-card{
     /*background: red;*/
@@ -481,11 +405,11 @@ img.pint-img {
 }
 
 .group-bottom-btns-card {
-   /*background: lime;*/
+    /*background: lime;*/
     display: flex;
-   justify-content: space-between;
-   position: absolute;
-   bottom: 5px;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 5px;
 }
 
 .btn-card-dropdown{
@@ -493,12 +417,10 @@ img.pint-img {
     border: none;
     color: #efefef;
     font-weight: 700;
-
 }
 
 .btn-card-dropdown svg{ 
     fill:#efefef;
-
 }
 
 .btn-card-link {
@@ -520,7 +442,6 @@ img.pint-img {
     padding: 5px;
     margin: 8px 0;  
     width: 40px;
-
 }
 
 button.hover:hover{
@@ -533,10 +454,6 @@ button.hover:active{
     padding:0;
     fill: #767676;
 }
- 
-
-
-
 
 /*----------Index-----------*/
 
