@@ -1,170 +1,118 @@
-html{
-    min-width: 400px;
-}
+/* BODY */
 body{
     background-color: #202124;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-}
-a{
-    text-decoration: none;
-    cursor: pointer;
+    margin: 0; padding: 0; min-width: 400px;
+    box-sizing: border-box; font-family: 'Roboto'; font-size: 14px;
 }
 
 /* HEADER */
 header{
-    width: 100%;
-    height: 60px;
+    display: flex; justify-content: flex-end; align-items: center;
+    height: 48px; padding: 6px;
 }
-header nav{
+header .Encabezado{
+    display: flex; align-items: center;
+    width: 232.05px; height: 48px; padding: 0 4px 0 32px;
+    font-size: 13px;
+}
+header .Encabezado a{
+    color:white; text-decoration: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center; align-items: center;
+    padding: 0 12px;
 }
-.nav-derecha{
-    width: 250px;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    align-items: center;
-}
-.nav-derecha a{
-    margin-right: 10px;
-    color: white;
-}
-.apps{
-    width: 24px;
-    height: 24px;   
-    filter: invert(1);
-}
-.perfil{    
-    width: 32px;
-    height: 32px; 
-    border-radius: 50%;
-}
+#APP{width: 24PX; height: 24PX;}
+#USER{width: 32px; height: 32px; border-radius: 50%;}
 
 /* MAIN */
-
-main{
-    margin-top: 106px;
-    text-align: center;
-}
-#logo{
-    margin: 0 auto;
-    margin-bottom: 30px ;
-}
-.logo img{
-    width: 272px;
-    height: 92px;
-}
-.search{
-    width: 584px;
-    margin: 0 auto 10px;
-}
-.input-search{
-    width: 582.4px;
-    border-radius: 100px;
-    border: 1px solid #5f6368;
-    caret-color: white;
-    display: flex;
+/* MAIN-LOGO */
+.LOGO{
+    display: flex; align-items: flex-end;
     justify-content: center;
-    align-items: center;
+    height: 197.6px;
 }
-.input-search:hover{
-    background-color: #303134;
-    border: none;
+#LOGO{width: 272px; height: 92px;}
+/* MAIN-BUSCADOR */
+.BUSCADOR{
+    display: flex; flex-flow: column;
+    justify-content: center; align-items:center ;
+    height: 120px; padding: 20px; padding-top: 26px; 
 }
-main .search input{
-    width: 443.4px;
-    height: 39px;
+/* MAIN-BUSCADOR-SEARCH */
+.SEARCH{
     background-color: transparent;
-    color: white;
-    border: none;
-    outline: none;
+    border: 1px solid #5f6368; border-radius: 24px;
+    display: flex; justify-content: center; align-items: flex-end;
+    width: 560.4px; height: 41px;
+    padding: 5px 8px 0 14px;
 }
-.lupa-icono{
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    display: flex;
-    padding-right: 13px;
-    width: 18px;
-    height: 18px;
+.SEARCH:hover{
+    background-color: #303134; 
+    border: 1px solid transparent;
 }
-.microfono-icono{
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    display: flex;
-    padding: 0 8px 0 8px;
-    width: 20px;
-    height: 20px;
+#LUPA{
+    padding-right: 13px; 
+    width: 20px; height: 46px;
 }
-.camara-icono{
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b6/Google_Lens_logo.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    display: flex;
-    padding: 0 8px 0 8px;
-    width: 20px;
-    height: 20px;
+#input-search{
+    background-color: transparent; color: white;
+    margin-bottom: 8px; width: 443.4px; height: 27px;
+    border: none; outline: none;
 }
-.btn-search{
-    width: 584px;
-    height: 58px;
-    margin: 0 auto;
-    padding-top: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#MICROFONO, #CAMARA{
+    padding: 0 8px;
+    width: 24px; height: 44px;
+}
+/* MAIN-BUSCADOR-BOTONES */
+.BOTONES{
+        display: flex; flex-wrap: wrap;
+        justify-content: center; align-items: center;
+        width: 584px; height: 70px;
+        padding-top: 18px;
 }
 #search, #lucky{
-    width: 154px;
-    height: 34.4px;
-    padding: 0 16px;
-    margin: 11px 4px;
-    background-color: #303134;
-    border: none;
-    font-size: 14px;
-    color: white;
-    border-radius: 4px;
+    background-color: #303134; color: #e8eaed; 
+    border: 1px; border-radius: 4px;
+    font-size: 14px; font-family: 'Roboto';
+    width: 150px; height: 36px;
+    padding: 0 16px; margin: 11px 4px;
 }
 #search:hover, #lucky:hover{
-    cursor: pointer;
-    border: 1px solid #5f6368;
+    border: 1px solid #5f6368; cursor: pointer;
+}
+/* MAIN-IDIOMA */
+.IDIOMA{
+    color: #bdc1c6; font-size: 13px;
+    display: flex; justify-content: center;
+    height: 28px; margin-bottom: 24px;
+}
+.IDIOMA p{
+    display: flex; align-items: center;
+    height: 28px; margin: 0;
+}
+.IDIOMA p a{
+    color: #8ab4f8; text-decoration: none;
+    padding: 0 3px;
 }
 
 /* FOOTER */
-
 footer{
-    width: 100%;
-    height: 50px;
-    position: absolute;
-    bottom: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
     background-color: #171717;
-    border-top: 1px solid #3c4043;
+    display: grid; grid-template-rows: 1fr 1fr;
+    position: absolute; bottom: 0;
+    width:100%; height: 95.2px;
 }
-footer ul{
-    list-style: none;
-    margin: 10px;
-    display: flex;
+.PAIS{
+    display: flex; align-items: center;
+    color: #9aa0a6; border-bottom: 1px solid #3c4043;
+    height: 17.6px; padding: 15px 30px;
 }
-.footer-izq{
-    justify-content: left;
+.VINCULOS{
+    display: flex; flex-wrap: wrap;
+    align-items: center; justify-content: space-between;
+    height: 46.8px; padding: 0 20px;
 }
-.footer-der{
-    justify-content: right;
-}
-footer ul li a{
-    margin: 10px;
-    color: #999da2;
-    font-size: 14px;
+.VINCULOS a{
+    text-decoration: none; color: #999da2;
+    padding: 15px;
 }

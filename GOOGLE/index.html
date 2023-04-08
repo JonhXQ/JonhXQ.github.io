@@ -4,57 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Estilo -->
     <link rel="stylesheet" href="style.css">
-    <!-- Fuente Roboto -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <!-- Titulo -->
-    <title>Clon Google</title>  
+    <link rel="icon" type="image/png" href="./IMG/ICONO.png">
+    <title>Clon de Google</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="nav-derecha">
-                <li><a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank">Gmail</a></li>
-                <li><a href="https://www.google.com.mx/imghp?hl=es&authuser=0&ogbl" target="_blank">Imágenes</a></li>
-                <li><a href="#"><img class="apps" src="./IMG/Apps.png" alt="Icono Apps"></a></li>
-                <li><a href="#"><img class="perfil" src="./IMG/Perfil.jpg" alt="Icono Perfil"></a></li>
-            </ul>
-        </nav>
+        <div class="Encabezado">
+            <a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank">Gmail</a>
+            <a href="https://www.google.com.mx/imghp?hl=es-419&authuser=0&ogbl" target="_blank">Imágenes</a>
+            <a href="https://about.google/intl/es-419/products/" target="_blank"><img src="./IMG/APP.svg" id="APP"></a>
+            <a href="https://accounts.google.com/SignOutOptions?hl=es-419&continue=https://www.google.com/" target="_blank"><img src="./IMG/USER.jpg" id="USER"></a>
+        </div>
     </header>
-
     <main>
-        <section id="logo">
-            <img src="./IMG/Google.png" alt="Icono Google">
-        </section>
-        <section class="search">
-            <div class="input-search">
-                <span class="lupa-icono"></span>
-                <input type="text" color="white">
-                <a class="microfono-icono" href=""></a>
-                <a class="camara-icono" href=""></a>
+        <section class="LOGO"><img src="./IMG/LOGO.png" id="LOGO"></section>
+        <section class="BUSCADOR">
+            <div class="SEARCH">
+                <img src="./IMG/LUPA.svg" id="LUPA">
+                <input type="text" id="input-search">
+                <a href="#"><img src="./IMG/MICROFONO.svg" id="MICROFONO"></a>
+                <a href="#"><img src="./IMG/CAMARA.svg" id="CAMARA"></a>
+            </div>
+            <div class="BOTONES">
+                <a href="#"><input type="button" value="Buscar con Google" id="search"></a>
+                <a href="https://www.google.com/doodles" target="_blank"><input type="button" value="Me siento con suerte" id="lucky"></a>
             </div>
         </section>
-        <div class="btn-search">
-            <a href="#"><input type="button" id="search" value="Buscar con Google"></a>
-            <a href="https://www.google.com/doodles" target="_blank"><input type="button" id="lucky" value="Voy a tener suerte"></a>
-        </div>
+        <section class="IDIOMA">
+            <p>
+                Ofrecido por Google en: <a href="#">Español (Latinoamérica)</a>
+            </p>
+        </section>
     </main>
-
     <footer>
-        <ul class="footer-izq">
-            <li><a href="https://about.google/?fg=1" target="_blank">Sobre Google</a></li>
-            <li><a href="https://ads.google.com/intl/es-419_mx/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2m--ahpm-0000000131-0000000001&fg=1" target="_blank">Publicidad</a></li>
-            <li><a href="https://smallbusiness.withgoogle.com/intl/es-419_mx/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&gmbsrc=ww-ww-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u&c=MX#!/"target="_blank">Negocios</a></li>
-            <li><a href="https://www.google.com/search/howsearchworks/?fg=1" target="_blank">Cómo funciona la Búsqueda</a></li>
-        </ul>
-        <ul class="footer-der">
-            <li><a href="https://policies.google.com/privacy?hl=es-419&fg=1" target="_blank">Privacidad</a></li>
-            <li><a href="https://policies.google.com/terms?hl=es-419&fg=1" target="_blank">Condiciones</a></li>
-            <li><a href="https://www.google.com/preferences" target="_blank">Preferencias</a></li>
-        </ul>
+        <section class="PAIS"><p>México</p></section>
+        <section class="VINCULOS">
+            <div class="FOOTER-IZQ">
+                <a href="https://about.google/?fg=1" target="_blank">Sobre Google</a>
+                <a href="https://ads.google.com/intl/es_mx/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&fg=1" target="_blank">Publicidad</a>
+                <a href="https://smallbusiness.withgoogle.com/intl/es-419_mx/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&gmbsrc=ww-ww-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u&c=MX#!/" target="_blank">Negocios</a>
+                <a href="https://smallbusiness.withgoogle.com/intl/es-419_mx/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&gmbsrc=ww-ww-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u&c=MX#!/" target="_blank">Cómo funciona la Búsqueda</a>
+            </div>
+            <div class="FOOTER-DER">
+                <a href="https://policies.google.com/privacy?hl=es-MX&fg=1" target="_blank">Privacidad</a>
+                <a href="https://policies.google.com/terms?hl=es-MX&fg=1" target="_blank">Condiciones</a>
+                <a href="https://www.google.com/preferences?hl=es-MX&fg=1" target="_blank">Preferencias</a>
+            </div>
+        </section>
     </footer>
 </body>
 </html>
