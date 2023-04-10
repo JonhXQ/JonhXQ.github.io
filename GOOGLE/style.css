@@ -1,8 +1,8 @@
 /* BODY */
 body{
     background-color: #202124;
-    margin: 0; padding: 0; min-width: 400px;
-    box-sizing: border-box; font-family: 'Roboto'; font-size: 14px;
+    margin: 0; padding: 0; min-width: 400px; font-size: 14px;
+    box-sizing: border-box; font-family: 'Roboto', sans-serif;
 }
 
 /* HEADER */
@@ -74,7 +74,7 @@ header .Encabezado a{
     background-color: #303134; color: #e8eaed; 
     border: 1px; border-radius: 4px;
     font-size: 14px; font-family: 'Roboto';
-    width: 150px; height: 36px;
+    width: 164px; height: 36px;
     padding: 0 16px; margin: 11px 4px;
 }
 #search:hover, #lucky:hover{
