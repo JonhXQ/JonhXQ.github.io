@@ -1,0 +1,97 @@
+/* HTML */
+*{
+    text-decoration: none; color: #111; 
+    font-family: sans-serif; font-weight: bold; outline: none;
+    font-size: 16px; margin: 0; padding: 0; 
+}
+
+/* NAV */
+#navbar-pinterest{
+    background-color: #fff; display: flex; 
+    align-items: center; justify-items: center; 
+    position: fixed; box-sizing: border-box;
+    width: 100%; height: 72px; padding: 4px 16px; z-index: 671;
+}
+/* NAV-IZQ */
+#pinterest-icon{
+    width: 24px; height: 24px; 
+    padding: 12px; border-radius: 50%;
+}
+#pinterest-icon:hover{background-color: #e9e9e9;}
+#INICIO{
+    background-color: #111; color: #fff;
+    display: flex; align-items: center; border-radius: 24px;
+    width: 39.438px; height: 48px; padding: 0 16px;
+}
+#HOY{
+    display: flex; align-items: center;
+    width: 29.462px; height: 48px; padding: 0 16px;
+}
+#CREAR{
+    display: flex; align-items: center; justify-content: space-between;
+    width: 104.2px; height: 48px; padding: 0 16px;
+}
+/* NAV-SEARCH */
+.finder{
+    background-color: #e9e9e9; border: none; font-weight: normal;
+    border-radius: 24px; width: 100%; height: 48px; padding: 0 8px 0 38px;
+    background-image: url(./IMG/LUPA.svg); background-repeat: no-repeat;
+    background-position: center left; background-position: 16px;
+}
+.finder:hover{background-color: #e1e1e1;}
+.finder:focus{
+    border: 4px solid #7bb5f0; background-image: none;
+    height: 40px; padding: 0 16px 0 20px;
+}
+/* NAV-DER */
+#notifications, #message, #profile-img{
+    display: flex; align-items: center; 
+    padding: 0 12px; height: 48px; border-radius: 50%;
+}
+#USER{height: 24px; border-radius: 50%;}
+#flecha{
+    display: flex; align-items: center; 
+    height: 24px; width: 24px; border-radius: 50%; 
+}
+#FLECHA{width: 12px; height: 12px; padding: 0 6px;}
+#notifications:hover, #message:hover, #profile-img:hover, #flecha:hover{
+    background-color: #e9e9e9; cursor: pointer;
+}
+
+/* MAIN */
+#content{
+    display: flex; flex-wrap: wrap; justify-content: center;
+    width: 100%; padding-top: 72px;
+}
+.card-image{
+    display: flex; position: relative;   
+    height: 100%; padding: 0 8px 16px;
+}
+#IMG{border-radius: 20px;}
+/* MAIN-HOVER */
+.HOVER{
+    background-color: rgba(0, 0, 0, 0.5); border: 16px solid transparent;
+    position: absolute; justify-content: center;
+    height: calc(100% - 48px); width: calc(100% - 48px);
+    border-radius: 20px; top: 0; opacity: 0;
+}
+.HOVER:hover{opacity: 1; cursor: zoom-in;}
+/* MAIN-HOVER (ELEMENTOS) */
+#SAVE{
+    background-color: red; color: white;
+    display: flex; align-items: center; justify-content: center; 
+    width: max-content; position: absolute;
+    padding: 15px; border-radius: 24px; right: 0;
+}
+.UPLOAD, .MORE{
+    background-color: #e9e9e9; display: flex;  
+    align-items: center; justify-content: center;
+    width: max-content; position: absolute;
+    padding: 5px; border-radius: 50%; bottom: 0;
+}
+.UPLOAD{right: 40px;} .MORE{right: 0;}
+#UPLOAD, #MORE{width: 20px; fill: black;}
+/* MAIN-HOVER (ELEMENTOS):hover */
+#SAVE:hover, .UPLOAD:hover, .MORE:hover{
+    filter: brightness(80%); cursor: pointer;
+}
