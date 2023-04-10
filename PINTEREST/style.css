@@ -60,19 +60,19 @@
 
 /* MAIN */
 #content{
-    display: flex; flex-wrap: wrap; justify-content: center;
-    width: 100%; padding-top: 72px;
+    box-sizing: border-box; columns: 226px;
+    width: 100%; padding: 72px 20px 0 5px; 
 }
 .card-image{
-    display: flex; position: relative;   
-    height: 100%; padding: 0 8px 16px;
+    display: block; position: relative; 
+    width: 236px; height: 100%; padding: 0 8px 16px;
 }
-#IMG{border-radius: 20px;}
+#IMG{border-radius: 20px; width: 236px;}
 /* MAIN-HOVER */
 .HOVER{
     background-color: rgba(0, 0, 0, 0.5); border: 16px solid transparent;
     position: absolute; justify-content: center;
-    height: calc(100% - 48px); width: calc(100% - 48px);
+    height: calc(100% - 52px); width: 204px;
     border-radius: 20px; top: 0; opacity: 0;
 }
 .HOVER:hover{opacity: 1; cursor: zoom-in;}
