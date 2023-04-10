@@ -95,3 +95,21 @@
 #SAVE:hover, .UPLOAD:hover, .MORE:hover{
     filter: brightness(80%); cursor: pointer;
 }
+
+/* MEDIA QUERY */
+@media screen and (max-width: 580px){
+    #navbar-pinterest{
+        justify-content: space-evenly;
+        bottom: 0; height: 80px;
+    }
+    #INICIO, #HOY, #CREAR, #flecha, .finder{display: none;}
+    #notifications, #message, #profile-img{height: 64px;}
+    #pinterest-icon, #CAMPANA, #CHAT ,#USER{height: 40px; width: 40px;}
+    #content{padding-top: 20px;}
+}
+@media screen and (max-width: 490px){
+    #content{
+        columns: none; display: flex; 
+        flex-wrap: wrap; justify-content: center;
+    }    
+}
