@@ -12,7 +12,7 @@ header{
 }
 header .Encabezado{
     display: flex; align-items: center;
-    width: 232.05px; height: 48px; padding: 0 4px 0 32px;
+    width: 234.05px; height: 48px; padding: 0 4px 0 32px;
     font-size: 13px;
 }
 header .Encabezado a{
