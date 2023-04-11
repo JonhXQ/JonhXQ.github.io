@@ -1,0 +1,95 @@
+/* HTML */
+*{
+    text-decoration: none; font-family: 'Ubuntu', sans-serif;
+    color: black; margin: 0; padding: 0;
+}
+
+/* NAVEGACIÓN */
+nav{
+    background-color: rgb(250, 250, 149); font-weight: bolder;
+    display: flex; flex-wrap: wrap; position: fixed;
+    justify-content: center; align-content: space-evenly;
+    padding: 0 10px; height: 100%; width: 200px;
+}
+.HOME, .RESUME, .SKILL, .CONTACT{
+    display: flex; flex-wrap: wrap; border-radius: 50px;
+    justify-content: center; align-items: center;
+    padding: 20px; width: 100px;
+}
+.HOME:hover, .RESUME:hover, .SKILL:hover, .CONTACT:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#HOME, #RESUME, #SKILL, #CONTACT{width: 65px; height: 80px;}
+
+/* MAIN */
+main{
+    width: calc(100% - 220px); height: 100vh; 
+    display: flex; margin-left: 220px; 
+    justify-content: space-evenly; align-items: center;
+}
+
+/* MAIN-HOME */
+.MAIN-HOME{flex-wrap: wrap;}
+.image-profile{width: 250px; height: 250px; border-radius: 50%;}
+#NAME{
+    display: flex; font-weight: bolder; justify-content: center;
+    font-size: 70px; width: 100%;
+}
+#PROFESIÓN{
+    color: rgb(212, 30, 30); font-weight: bolder;
+    display: flex; justify-content: center;
+    font-size: 30px; width: 100%;
+}
+.MAIN-HOME h2{
+    display: flex; justify-content: center; font-weight: bolder;
+    font-size: 50px; width: 100%; 
+}
+.MAIN-HOME table{display: flex; font-size: 30px;}
+.MAIN-HOME table th{text-align: right; padding: 10px; color: rgb(212, 30, 30);}
+.MAIN-HOME table td{text-align: left; padding: 10px;}
+
+/* MAIN-RESUME */
+.MAIN-RESUME{flex-wrap: wrap;}
+#FRASE{
+    display: flex; justify-content: center;  
+    text-align: center; color: gray;
+    width: 100%; font-size: 30px; padding: 40px 0 0;
+}
+.EDUCATION{
+    display: flex; flex-wrap: wrap;
+    justify-content: center; align-items:  center;
+    width: 58%; height: calc(100% - 120px);  padding: 0 20px;
+}
+.EDUCATION h2{
+    display: flex; justify-content: center;
+    font-size: 50px; width: 100%;
+}
+.EDU_1, .EDU_2{text-align: center;}
+.EDUCATION a{color: rgb(212, 30, 30); font-size: 40px;}
+.EDUCATION h3{color: gray; font-size: 30px;}
+.EDUCATION h4{font-size: 30px;}
+.name{height: calc(100% - 160px); padding: 20px; border-radius: 15%;}
+
+/* MAIN-SKILL */
+.MAIN-SKILL-1, .MAIN-SKILL-2{
+    display: flex; flex-wrap: wrap;
+    justify-content: center; align-content: space-evenly;
+    width: 50%; height: 100%; padding: 0 150px;
+}
+.MAIN-SKILL-1 div, .MAIN-SKILL-2 div{width: 100%;}
+.MAIN-SKILL h2{
+    color: rgb(212, 30, 30); text-align: center; font-weight: bolder;
+    font-size: 50px; width: 100%; 
+}
+.skills{text-align: left; font-weight: bolder; font-size: 30px; width: 100%;}
+
+/* MAIN-CONTACT */
+.FACEBOOK, .LINKEDIN, .GITHUB{
+    display: flex; flex-wrap: wrap; justify-content: center;
+    width: 200px; padding: 20px; font-size: 30px; font-weight: bold;
+}
+.FACEBOOK:hover, .LINKEDIN:hover, .GITHUB:hover{
+    filter: invert(100); background-color: white;
+    border-radius: 30%;
+}
+.FACEBOOK img, .LINKEDIN img, .GITHUB img{width: 150px; padding: 10px;}
