@@ -21,7 +21,7 @@ header .Encabezado a{
     justify-content: center; align-items: center;
     padding: 0 12px;
 }
-#APP{width: 24PX; height: 24PX;}
+#APP{width: 24px; height: 24px;}
 #USER{width: 32px; height: 32px; border-radius: 50%;}
 
 /* MAIN */
