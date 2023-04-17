@@ -1,8 +1,0 @@
-.archivo{
-    display: flex; justify-content: center;
-}
-
-#tabla{
-    border: 1px solid black; width: max-content;
-    display: flex; justify-items: center;
-}

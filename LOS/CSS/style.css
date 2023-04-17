@@ -1,0 +1,18 @@
+*{
+    background-color: #202124;
+}
+
+.archivo input, .archivo button{
+    background-color: white;
+}
+
+#tabla{
+    color: #e1e1e1;width: max-content;
+    display: flex; justify-content: space-evenly;
+}
+#tabla th{
+    color: yellow; text-align: center; 
+    width: 140px; padding: 20px;
+}
+#tabla td{text-align: center; padding: 0 20px 0;}
+#tabla td:first-child, #tabla th:first-child{width: 40px;}

@@ -13,25 +13,10 @@ function loadFile(){
         let worksheet = workbook.Sheets[workbook.SheetNames[0]];
         /* Convertir la hoja de cálculo a un objeto JSON */
         let jsonData = XLSX.utils.sheet_to_json(worksheet);
-        /* Imprimir el objeto jsonData en la consola */
-        console.log(jsonData);
-        /* Obtener la tabla HTML */
-        let tabla = document.getElementById("tabla");
-        /* Crear una fila para los encabezados de columna */
-        let encabezados = jsonData[0];
-        let filaEncabezados = tabla.insertRow();
-        for (let encabezado in encabezados){
-            let celda = filaEncabezados.insertCell();
-            celda.innerHTML = encabezados[encabezado];
-        }
-        /* Crear filas para los datos de la hoja de cálculo */
-        for (let i = 1; i < jsonData.length; i++){
-            let filaDatos = tabla.insertRow();
-            for (let dato in jsonData[i]){
-                let celda = filaDatos.insertCell();
-                celda.innerHTML = jsonData[i][dato];
-            }
-        }
+        /* Almacenar los datos del archivo en una variable global */
+        window.datosExcel = jsonData;
+        generarTabla(jsonData);
+        calcular(jsonData);
     };
     /* Leer el contenido del archivo como binario */
     reader.readAsBinaryString(inputFile);
