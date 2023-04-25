@@ -2,6 +2,10 @@
     background-color: #202124;
 }
 
+nav a input{
+    background-color: white;
+}
+
 .archivo input, .archivo button{
     background-color: white;
 }
