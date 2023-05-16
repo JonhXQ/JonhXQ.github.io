@@ -39,20 +39,20 @@ function login() {
     });
 
     if (accesoCuenta) {
-        alert("Acceso concedido")
+        alert("Acceso concedido");
         buildMenuCuenta(cuentas, userInput);
     } else {
-        alert("Número de cuenta o NIP incorrectos")
+        alert("Número de cuenta o NIP incorrectos");
         resetLogin();
     }
-    console.log(userInput, passwordInput)
+    console.log(userInput, passwordInput);
 }
 
 const buildMenuCuenta = (cuentas, userInput) => {
     /* Seleccionar el elemento del DOM padre */
-    const getParentElement = document.getElementById('menuCuenta')
+    const getParentElement = document.getElementById('menuCuenta');
     /* Limpiar el contenido del elemento padre */
-    getParentElement.innerHTML = ''
+    getParentElement.innerHTML = '';
     cuentas.forEach((line) => {
         if (line.numeroCuenta === userInput) {
             /* Crear la sección solo si el número de cuenta existe */
@@ -89,7 +89,7 @@ function Saldo(saldoCuenta) {
     `;
 }
 
-function Ingresar() {
+function Ingresar(saldoCuenta) {
     const saldoSection = document.getElementById('saldoSection');
     const ingresarSection = document.getElementById('ingresarSection');
     const retirarSection = document.getElementById('retirarSection');
@@ -101,24 +101,18 @@ function Ingresar() {
     ingresarSection.innerHTML = `
         <h2>Ingresar Saldo</h2>
         <input type="number" id="montoIngresado" min="0" placeholder="Ingrese un monto">
-        <button onclick="realizarIngreso()">Ingresar</button>
+        <button onclick="realizarIngreso(${saldoCuenta})">Ingresar</button>
     `;
 }
 
 function realizarIngreso(saldoCuenta){
-    const montoIngresado = document.getElementById('montoIngresado')
-    if ((saldoCuenta + montoIngresado) < 990) {
+    const montoIngresado = parseInt(document.getElementById('montoIngresado').value);
+    if (montoIngresado > 0 && saldoCuenta + montoIngresado <= 990){
         saldoCuenta += montoIngresado;
-    } else {
-        alert("El monto máximo permitido en su cuenta es de $990");
+        alert(`Se ha ingresado un monto de $ ${montoIngresado}. Nuevo Saldo: $ ${saldoCuenta}`);
+    }else{
+        alert("Su cuenta no puede tener un saldo mayor a $990")
     }
-
-    saldoSection2.style.display = 'block';
-
-    ingresarSection2.innerHTML = `
-    <h3>Monto ingresado: $ ${montoIngresado}</h3>
-    <h3>Saldo actual: $ ${saldoCuenta}</h3>
-`;
 }
 
 function Retirar() {
