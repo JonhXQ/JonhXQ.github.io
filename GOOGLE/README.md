@@ -1,4 +1,4 @@
-<h1><a href="https://jonhxq.github.io/GOOGLE/">Clon de Google</a></h1>
+<h1 align="center"><a href="https://jonhxq.github.io/GOOGLE/">Clon de Google</a></h1>
 
 <h2>OBJETIVO</h2>
 <p align="justify">El sitio web a construir debe contener la etiqueta title con el nombre  de "Clon de Google", además  se debe hacer uso de las etiquetas semánticas < header >, < main > y < footer >. La parte  principal(Logo, caja de texto y botones)  debe estar dividida en dos o mas secciones, por otra parte el logo debe tener como id "logo" y los botones de búsqueda ("Buscar con google"  y "Me siento con suerte") deben  ser links en forma de botón, ambos botones tienen el id "search" y "lucky" respectivamente. La caja de texto  debe tener su propio id "input-search". Por ultimo en le pie de la pagina deben contener los mismos links que el google original todos ellos con la clase "footer-link".</p>

@@ -1,4 +1,4 @@
-<h1><a href="https://jonhxq.github.io/PINTEREST/">Clon de Pinterest</a></h1>
+<h1 align="center"><a href="https://jonhxq.github.io/PINTEREST/">Clon de Pinterest</a></h1>
 
 <h2>OBJETIVO</h2>
 <p align="justify">Hacer lo más parecido el diseño de pinterest. Toma en cuenta la navbar y que cada tarjeta tiene un hover para mostrar 3 diferentes botones
