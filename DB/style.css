@@ -1,0 +1,38 @@
+*{
+    margin: 0;background-color: #1e2022; color: white; caret-color: transparent;
+    font-family: 'Ubuntu', sans-serif; font-size: large; text-decoration: none;
+}
+/* MENÚ DE NAVEGACIÓN */
+nav{
+    background-color: #181a1b; 
+    display: flex; flex-wrap: wrap; position: fixed;
+    justify-content: center; align-content: space-evenly;
+    padding: 0 10px; height: 100%; width: 200px;
+}
+nav .LOGO, .INICIO, .ALUMNOS, .GRUPOS, .MATERIAS{
+    background-color: #181a1b; 
+    display: flex; flex-wrap: wrap; border-radius: 50px;
+    justify-content: center; align-items: center;
+    padding: 20px; width: 100px;
+}
+nav .INICIO:hover, .ALUMNOS:hover, .GRUPOS:hover, .MATERIAS:hover{
+    background-color: #966201; cursor: pointer;
+}
+/* CUERPO PRINCIPAL DE LA PÁGINA */
+main{
+    width: calc(100% - 220px); height: 100vh; margin-left: 220px;
+    display: flex; flex-wrap: wrap;
+    align-items:center; justify-content: center;
+}
+main table{display: flex;}
+main table th{padding: 20px; font-size:xx-large;}
+main table td{padding: 20px;}
+main table #button{text-align: center;}
+main table input{
+    background-color: #303134; text-align: center;
+    border: 1px; border-radius: 4px; display: flex;
+}
+main table select{display: flex; text-align: center; width: 100%;}
+main table input:hover, select{cursor: pointer;}
+main table button{background-color: #181a1b; padding: 20px;}
+main table button:hover{background-color: #3b3b3b; cursor: pointer;}
