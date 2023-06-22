@@ -16,7 +16,7 @@ function nuevoGrupo(event){
     /* Obtener los valores del formulario */
     const carrera = document.getElementById('carrera').value;
     const semestre = document.getElementById('semestre').value;
-    const grupo = document.getElementById('grupo').value;
+    const grupo = document.getElementById('grupo').value.toUpperCase();
 
     /* Definir el identificador del grupo */
     const nombreGrupo = carrera.charAt(0) + semestre + grupo;
@@ -35,7 +35,6 @@ function nuevoGrupo(event){
 
     /* Vaciar el formulario */
     document.getElementById('grupoForm').reset();
-    alert('Correcto');
 }
 
 document.getElementById("grupoForm").addEventListener('submit', nuevoGrupo);

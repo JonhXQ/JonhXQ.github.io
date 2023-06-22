@@ -19,12 +19,16 @@ nav .INICIO:hover, .ALUMNOS:hover, .GRUPOS:hover, .MATERIAS:hover{
     background-color: #966201; cursor: pointer;
 }
 /* CUERPO PRINCIPAL DE LA PÁGINA */
+.TABLA-GRUPOS, .TABLA-ALUMNOS{display: flex;
+    width: calc(100% - 220px); justify-content: center;
+}
 main{
     width: calc(100% - 220px); height: 100vh; margin-left: 220px;
     display: flex; flex-wrap: wrap;
     align-items:center; justify-content: center;
 }
-main table{display: flex;}
+main table thead td{font-weight: bolder;}
+main table tbody{text-align: center;}
 main table th{padding: 20px; font-size:xx-large;}
 main table td{padding: 20px;}
 main table #button{text-align: center;}

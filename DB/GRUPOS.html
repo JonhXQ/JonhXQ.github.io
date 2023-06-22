@@ -10,6 +10,8 @@
     <!-- Referencia del CSS -->
     <link rel="stylesheet" href="./style.css">
     <style>.GRUPOS{background-color: #966201;}</style>
+    <!-- Añade el icono de pestaña -->
+    <link rel="icon" href="./IMG/ICONO.ico">
     <!-- Referencia del JavaScript -->
     <script src="./GRUPOS.js" defer></script>
     <title>Base de datos de alumnos</title>
@@ -23,7 +25,7 @@
         <a class="MATERIAS" href="./MATERIAS.html">Materias</a>    
     </nav>
     <main>
-        <form id="grupoForm" autocomplete="off"><table>
+        <form id="grupoForm" autocomplete="off"><table id="a">
             <tr><th colspan="2">NUEVO GRUPO</th></tr>
             <tr>
                 <td><label for="carrera">Carrera:</label></td>
@@ -42,10 +44,11 @@
             </tr>
             <tr>
                 <td><label for="grupo">Grupo:</label></td>
-                <td><input type="text" id="grupo" required></td>
+                <td><input type="text" id="grupo" oninput="Up" required></td>
             </tr>
             <tr><td colspan="2" id="button"><button type="submit">ACEPTAR</button></td></tr>
-        </table></form> 
+        </table></form>
+        </table>
     </main>
 </body>
 </html>

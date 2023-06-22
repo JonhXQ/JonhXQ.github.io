@@ -10,6 +10,8 @@
     <!-- Referencia del CSS -->
     <link rel="stylesheet" href="./style.css">
     <style>.INICIO{background-color: #966201;}</style>
+    <!-- Añade el icono de pestaña -->
+    <link rel="icon" href="./IMG/ICONO.ico">
     <!-- Referencia del JavaScript -->
     <script src="./script.js" defer></script>
     <title>Base de datos de alumnos</title>
@@ -23,7 +25,40 @@
         <a class="MATERIAS" href="./MATERIAS.html">Materias</a>    
     </nav>
     <main>
-        
+        <!-- Tabla de Grupos -->
+        <section class="TABLA-GRUPOS">
+            <table id="tablaGrupos">
+                <thead>
+                    <tr><th colspan="4">GRUPOS</th></tr>
+                    <tr>
+                        <td>ID GRUPO</td>
+                        <td>CARRERA</td>
+                        <td>SEMESTRE</td>
+                        <td>GRUPO</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Tabla dinámica de GRUPOS -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Tabla de Alumnos -->
+        <section class="TABLA-ALUMNOS">
+            <table id="tablaAlumnos">
+                <thead>
+                    <tr><th colspan="3">ALUMNOS</th></tr>
+                    <tr>
+                        <td>NOMBRE</td>
+                        <td>APELLIDOS</td>
+                        <td>EDAD</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Tabla dinámica de ALUMNOS -->
+                </tbody>
+            </table>
+        </section>
     </main>
 </body>
 </html>
