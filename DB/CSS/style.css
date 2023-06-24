@@ -27,7 +27,7 @@ main{
     display: flex; flex-wrap: wrap;
     align-items:center; justify-content: center;
 }
-main table thead td{font-weight: bolder;}
+main table thead td{font-weight: bolder; text-align: center; width: 500px;}
 main table tbody{text-align: center;}
 main table th{padding: 20px; font-size:xx-large;}
 main table td{padding: 20px;}

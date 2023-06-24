@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Referencia de fuente Lato -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+    </style>
+    <!-- Referencia del CSS -->
+    <link rel="stylesheet" href="/DB/CSS/style.css">
+    <style>
+        .ALUMNOS {
+            background-color: #966201;
+        }
+    </style>
+    <!-- Añade el icono de pestaña -->
+    <link rel="icon" href="/DB/IMG/IMG/ICONO.ico">
+    <!-- Referencia del JavaScript -->
+    <script src="/DB/JS/ALUMNOS.js" defer></script>
+    <title>Base de datos de alumnos</title>
+</head>
+
+<body>
+    <nav>
+        <img class="LOGO" src="/DB/IMG/LOGO.png">
+        <a class="INICIO" href="/DB/index.html">Inicio</a>
+        <a class="ALUMNOS" href="/DB/HTML/ALUMNOS.html">Alumnos</a>
+        <a class="GRUPOS" href="/DB/HTML/GRUPOS.html">Grupos</a>
+        <a class="MATERIAS" href="/DB/HTML/MATERIAS.html">Materias</a>
+    </nav>
+    <main>
+        <form id="alumnoForm" autocomplete="off">
+            <table>
+                <tr>
+                    <th colspan="2">NUEVO ALUMNO</th>
+                </tr>
+                <tr>
+                    <td><label for="nombre">Nombre:</label></td>
+                    <td><input type="text" id="nombre" required></td>
+                </tr>
+                <tr>
+                    <td><label for="apellidos">Apellidos:</label></td>
+                    <td><input type="text" id="apellidos" required></td>
+                </tr>
+                <tr>
+                    <td><label for="edad">Edad:</label></td>
+                    <td><input type="number" id="edad" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="button"><button type="submit">ACEPTAR</button></td>
+                </tr>
+            </table>
+        </form>
+
+        <!-- Tabla de Alumnos -->
+        <section class="TABLA-ALUMNOS">
+            <table id="tablaAlumnos">
+                <thead>
+                    <tr>
+                        <th colspan="4">ALUMNOS</th>
+                    </tr>
+                    <tr>
+                        <td>N° CONTROL</td>
+                        <td>NOMBRE</td>
+                        <td>APELLIDOS</td>
+                        <td>EDAD</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Tabla dinámica de ALUMNOS -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

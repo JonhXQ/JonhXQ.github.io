@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Referencia de fuente Lato -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+    </style>
+    <!-- Referencia del CSS -->
+    <link rel="stylesheet" href="/DB/CSS/style.css">
+    <style>
+        .GRUPOS {
+            background-color: #966201;
+        }
+    </style>
+    <!-- Añade el icono de pestaña -->
+    <link rel="icon" href="/DB/IMG/ICONO.ico">
+    <!-- Referencia del JavaScript -->
+    <script src="/DB/JS/GRUPOS.js" defer></script>
+    <title>Base de datos de alumnos</title>
+</head>
+
+<body>
+    <nav>
+        <img class="LOGO" src="/DB/IMG/LOGO.png">
+        <a class="INICIO" href="/DB/index.html">Inicio</a>
+        <a class="ALUMNOS" href="/DB/HTML/ALUMNOS.html">Alumnos</a>
+        <a class="GRUPOS" href="/DB/HTML/GRUPOS.html">Grupos</a>
+        <a class="MATERIAS" href="/DB/HTML/MATERIAS.html">Materias</a>
+    </nav>
+    <main>
+        <form id="grupoForm" autocomplete="off">
+            <table id="a">
+                <tr>
+                    <th colspan="2">NUEVO GRUPO</th>
+                </tr>
+                <tr>
+                    <td><label for="carrera">Carrera:</label></td>
+                    <td id="select"><select id="carrera" required>
+                            <option value="" disabled selected>Seleccionar Carrera</option>
+                            <option value="Electrónica">Ingeniería Electrónica</option>
+                            <option value="Civil">Ingeniería Civil</option>
+                            <option value="Mecánica">Ingeniería Mecánica</option>
+                            <option value="Industrial">Ingeniería Industrial</option>
+                            <option value="Química">Ingeniería Química</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label for="semestre">Semestre:</label></td>
+                    <td><input type="number" id="semestre" required></td>
+                </tr>
+                <tr>
+                    <td><label for="grupo">Grupo:</label></td>
+                    <td><input type="text" id="grupo" oninput="Up" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="button"><button type="submit">ACEPTAR</button></td>
+                </tr>
+            </table>
+        </form>
+        </table>
+
+        <!-- Tabla de Grupos -->
+        <section class="TABLA-GRUPOS">
+            <table id="tablaGrupos">
+                <thead>
+                    <tr>
+                        <th colspan="4">GRUPOS</th>
+                    </tr>
+                    <tr>
+                        <td>ID GRUPO</td>
+                        <td>CARRERA</td>
+                        <td>SEMESTRE</td>
+                        <td>GRUPO</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Tabla dinámica de GRUPOS -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
