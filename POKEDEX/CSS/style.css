@@ -1,3 +1,28 @@
-*{
-    
+@font-face {
+    font-family: 'Pokemon';
+    src: url('./font.ttf');
+}
+
+* {
+    font-family: 'Pokemon';
+    text-align: center;
+}
+
+.contenedor-pokemons {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.tarjeta-pokemon {
+    border: 1px solid black;
+}
+
+.tipos-pokemon span {
+    margin: 0 8px 0;
+    /* Ajusta el valor según el espaciado deseado */
+}
+
+.pagina {
+    text-align: right;
 }
