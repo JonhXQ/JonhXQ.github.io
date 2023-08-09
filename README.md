@@ -7,3 +7,6 @@
     <li><h3><a href="/POKEDEX/">Pokédex</a></h3></li>
     <li><h3><a href="/LOS/">Line of Sight</a></h3></li>
 </ul>
+
+> ### NOTA
+> Todos los proyectos están alojados en GitHub pages 

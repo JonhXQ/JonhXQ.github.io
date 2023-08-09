@@ -101,7 +101,7 @@ function tarjetaPokemon(pokemon) {
     contenedorPokemons.appendChild(tarjeta);
 }
 
-// Función para mostrar el modal con información detallada del Pokémon
+/* Función para mostrar el modal con información detallada del Pokémon */
 function mostrarModal(pokemon) {
     const modalTitle = document.getElementById('nombrePokemon');
     const modalPeso = document.getElementById('pesoPokemon');

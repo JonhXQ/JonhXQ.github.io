@@ -33,3 +33,6 @@ https://storage.googleapis.com/campus-cvs/00000000000-images-lectures/pokemons.j
     <li>EcmaScript 6</li>
     <li>Repo en Github (Github pages es un plus)</li>
 </ul>
+
+> ### NOTA
+> Agregar al código clases e instancias

@@ -26,3 +26,10 @@
 .pagina {
     text-align: right;
 }
+
+.tipo-planta{
+    background-color: green;
+}
+.tipo-veneno{
+    background-color: purple;
+}

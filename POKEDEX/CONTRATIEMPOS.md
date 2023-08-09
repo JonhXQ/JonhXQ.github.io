@@ -34,7 +34,7 @@ pokemon();
     pokemon();
     ```
     * ### IMPEDIMENTO
-        Los encabezados CORS del servidor no están correctamente configurados, al no tener acceso directo al servidor para corregirlos, el `mode: 'cors'` no es suficiente para resolver el problema del error `No 'Access-Control-Allow-Origin'`
+        Si los encabezados CORS del servidor no están correctamente configurados, al no tener acceso directo al servidor para corregirlos, el `mode: 'no-cors'` no será suficiente para resolver el problema del error `No 'Access-Control-Allow-Origin'`
 
 * ### ALTERNATIVA 2
     Implementar una extensión de navegador para agregar encabezados personalizados o realizar solicitudes a través de su propio contexto, evitando así el problema de CORS. Una propuesta proporcionada por el asesor Francisco Campos sería: 
@@ -46,7 +46,7 @@ pokemon();
     * ### IMPEDIMENTO
         Al utilizar una extensión para solucionar el problema de CORS, se está agregando una dependencia externa al sitio web. Esto significa que los futuros usuarios van a requerir de la extensión para el correcto funcionamiento del sitio. La extensión solo debe considerarse como medida temporal y para propósitos de desarrollo y pruebas locales, no para implementación en producción.
 
-* ### SOLUCIÓN
+* ### ALTERNATIVA 3
     Si el archivo JSON no se actualiza con frecuencia, se puede descargar y alojar en un servidor propio. De esta manera, se realizarán las solicitudes `fetch` desde el mismo dominio en una ubicación accesible desde el servidor local, evitando problemas con el **CORS**.
 
     ``` JavaScript
@@ -59,12 +59,8 @@ pokemon();
 
     pokemon();
     ```
-
-## SyntaxError: Unexpected non-whitespace character after JSON at position 577470
-Este error indica que existe una mala sintaxis en la respuesta JSON. Esto generalmente significa que el JSON es incorrecto o está incompleto después de esa posición.
-
-* ### SOLUCIÓN
-    Al verificar el contenido del JSON en la línea 577470 se muestra que existe un conflicto de llaves de cierre, pues todos los elementos del objeto están duplicados. Aprovechando que el JSON esta alojado en un servidor local, se borran los elementos duplicados y desaparece el conflicto de sintaxis en la respuesta JSON.
+    * ### IMPEDIMENTO
+        Esta forma no es recomendable si el JSON está en constante cambio, pues deja a la aplicación web fácilmente desfasada, lo cual va en contra del objetivo de proporcionar información adecuada a los usuarios.
 
 ## Acceso a los pokemon por índice
 Una de las formas más sencillas para acceder a un conjunto de pokemons en especifico con la función `fetch`, dentro de la promesa devuelta, es mediante su índice dentro del arreglo. La problemática surge al percatarnos de que el JSON tiene pokemon repetidos, por lo tanto, al mismo pokemon le puede corresponder diferentes indices dentro del arreglo.
